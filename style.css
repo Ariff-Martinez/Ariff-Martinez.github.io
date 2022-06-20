@@ -56,12 +56,27 @@ body{
     border-radius: 22px;
 }
 
-.item-nav .link-nav .input-nav{
-    background-color: var(--gray-color);
+
+/* Search Input */
+
+.search-box-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid var(--gray-color);
     border-radius: 24px;
+    padding: 0xp 1em 0px 1em;
+    background-color: var(--gray-color);
+}
+
+
+
+.item-nav .link-nav .input-nav{
+    border: none;
     padding: 1em;
-    width: 50vw;
+    width: 72vw;
+    border: 2px solid transparent;
+    border-radius: 24px;
 }
 
 .item-nav .link-nav .input-nav::placeholder{
@@ -81,6 +96,13 @@ body{
 #icon-size-color{
     font-size: 1.5em;
     color: var(--gray-color-icon);
+}
+
+.fa-solid.fa-magnifying-glass{
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--gray-color-icon);
+    padding-left: 16px;
 }
 
 .fa-solid.fa-plus:hover{
