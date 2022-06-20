@@ -1,16 +1,135 @@
 /* Fonts */
 /* 'Ubuntu' */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+/* 'Maven Pro' */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 /* Custom colors */
 :root{
     /* Brand color */
     --red-color: #e60023;
-    --blck-color: #333;
-    --gray-color: #ddd;
+    --blck-color: #000;
+    --gray-color: #efefef;
+    --gray-color-icon: #767676;
+    --gray-color-icon-perfil: #efefef;
+    --white-color: #fff;
 
 }
 
 body{
     margin: 0px;
+    font-family: 'Ubuntu';
 }
+
+/* logo */
+.logo-img{
+    width: 1.8em;
+}
+
+/* Navegation Bar */
+.navegation-bar{
+    margin: 1em;
+}
+
+.navegation-bar .items-nav{
+     margin: 0px;
+}
+
+.navegation-bar .ul-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.item-nav .link-nav{
+    text-decoration: none;
+    color: var(--blck-color);
+}
+
+.item-nav .link-nav.border{
+    background-color: #000;
+    color: var(--white-color);
+    padding: 0.8em;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 22px;
+}
+
+.item-nav .link-nav .input-nav{
+    background-color: var(--gray-color);
+    border: 2px solid var(--gray-color);
+    border-radius: 24px;
+    padding: 1em;
+    width: 50vw;
+}
+
+.item-nav .link-nav .input-nav::placeholder{
+    
+    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-size: 1rem;
+}   
+
+.icon-img{
+    width: 1em;
+}
+
+
+/* nav icons */
+
+#icon-size-color{
+    font-size: 1.5em;
+    color: var(--gray-color-icon);
+}
+
+.fa-solid.fa-plus:hover{
+    background-color: var(--gray-color);
+    border: 2px solid var(--gray-color);
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+    padding: 0.5em;
+}
+
+.fa-solid.fa-comment-dots:hover{
+    background-color: var(--gray-color);
+    border: 2px solid var(--gray-color);
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+    padding: 0.5em;
+}
+.fa-solid.fa-bell:hover{
+    background-color: var(--gray-color);
+    border: 2px solid var(--gray-color);
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+    padding: 0.5em;
+}
+
+.chevron-down-outline{
+    padding: 0.3em;
+}
+
+.item-nav .link-nav.letter{
+    font-size: 0.65em;
+    padding: 0.7em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--gray-color-icon-perfil);
+}
+
+.item-nav .link-nav.letter:hover{
+    font-size: 1em;
+    padding: 1em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--gray-color-icon-perfil);
+}
+
+
+
