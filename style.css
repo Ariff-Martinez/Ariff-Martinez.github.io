@@ -15,20 +15,25 @@
 
 }
 
+
 body{
     margin: 0px;
     font-family: 'Ubuntu';
+    
 }
 
 /* logo */
 .logo-img{
     width: 1.8em;
 }
+*{
+    box-sizing: 0;
+}
 
 /* Navegation Bar */
 .navegation-bar{
     margin: 0.5em;
-    position: fixed;
+    /* position: fixed; */
     width: 100vw;
 }
 
@@ -163,8 +168,19 @@ body{
 
 /* Container */
 
+
 .container{
-    border: 3px solid #000;
-    width: 100vw;
-    height: 200vh;
+    border: 10px solid #000;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px 10px;
 }
+
+.item-content{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
