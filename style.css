@@ -17,7 +17,6 @@
 
 }
 
-
 body{
     margin: 0px;
     font-family: 'Ubuntu';
@@ -43,8 +42,6 @@ body{
     z-index: 1;
     height:80px;
 }
-
-
 
 .navegation-bar .items-nav{
      margin: 0px;
@@ -72,7 +69,6 @@ body{
     border-radius: 22px;
 }
 
-
 /* Search Input */
 
 .search-box-border{
@@ -84,10 +80,6 @@ body{
     padding: 0xp 1em 0px 1em;
     background-color: var(--gray-color);
 }
-
-
-
-
 
 .item-nav .link-nav .input-nav{
     border: none;
@@ -109,7 +101,6 @@ body{
     width: 1em;
 }
 
-
 /* nav icons */
 
 #icon-size-color{
@@ -129,8 +120,8 @@ body{
     background-color: var(--gray-color);
     border: 2px solid var(--gray-color);
     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
     padding: 0.5em;
 }
 
@@ -146,8 +137,8 @@ body{
     background-color: var(--gray-color);
     border: 2px solid var(--gray-color);
     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
     padding: 0.5em;
 }
 
@@ -196,4 +187,21 @@ body{
 
 }
 
+/* Reponsive */
 
+@media screen and (min-width:500px) and (max-width:700px){
+    .item-nav .link-nav.today{
+        display: none;
+    }
+
+    .item-nav .link-nav .input-nav{
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1000px){
+
+    .item-nav .link-nav .input-nav{
+        width: 50vw;
+    }
+}
